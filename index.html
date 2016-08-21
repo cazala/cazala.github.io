@@ -38,7 +38,7 @@
 		max-width: 400px;
 		color: gray;
 		margin-left: -200px;
-		margin-top: -120px;
+		margin-top: -140px;
 		left: 50%;
 		top: 50%;
 		position: absolute;
@@ -52,6 +52,20 @@
   a:hover {
     text-decoration: underline;
   }
+
+	ul {
+    padding: 0px;
+    text-align: center;
+	}
+	li {
+    display: inline-block;
+	}
+	li:after {
+    content: " |";
+	}
+	li:last-child:after {
+	    content: "";
+	}
 
 	</style>
 	<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet" type="text/css">
