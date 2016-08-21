@@ -1,0 +1,63 @@
+<html>
+<head>
+	<title>Juan Cazala</title>
+	<link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+	<meta name="description" content="Hello world, my name is Juan Cazala.">
+	<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=no, maximum-scale=1, minimum-scale=1" />
+	<script src="jquery.js"></script>
+	<script src="raphael.js"></script>
+	<script src="vector.js"></script>
+	<script src="fish.js"></script>
+	<script src="main.js"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-54879338-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	<style>
+	body { 
+		font-family: "Lucida Console", Monaco, monospace;
+		position: relative;
+	}
+	.hello{
+		max-width: 300px;
+		font-size: 12px;
+		color: gray;
+		margin-left: -150px;
+		margin-top: -96px;
+		left: 50%;
+		top: 50%;
+		position: absolute;
+		text-shadow: 0px 0px 20px white;
+	}
+
+	a {
+		color: black;
+	}
+
+	.shadow{
+		box-shadow: 0 0 50px gray inset;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+	}
+	</style>
+
+</head>
+	<body style="width: 100%;height: 100%; margin: 0px;">
+		<div class='shadow'></div>
+		<div class="hello"><p>Hello World.<br><br> My name is Juan Cazala.<br>I'm a Computer Engineering student and a Javascript/.NET developer from Argentina.<br><br>I like making awesome stuff, if you want to contact me follow these links:<p>
+			<ul>
+				<li><a href='http://github.com/cazala' target='blank'>Github</a></li>
+				<li><a href='https://www.linkedin.com/in/juancazala/en' target='blank'>LinkedIn</a></li>
+				<li><a href='mailto:cazala@mail.sfsu.edu'>Email</a></li>
+			</ul>
+		<p>...or you can just <a href='#' onclick="$('.hello').fadeOut();">play with the fish</a>.</p>
+		</div>
+		<canvas id="canvas"></canvas>
+	</body>
+</html>
