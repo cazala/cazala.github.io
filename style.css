@@ -10,9 +10,11 @@ body {
   font-size: 100%;
   font-weight: 400;
 }
+
 .hello {
   color: black;
 }
+
 .text {
   max-width: 400px;
   margin-left: -200px;
@@ -23,26 +25,57 @@ body {
   text-shadow: 0px 0px 20px white;
   line-height: 1.2;
 }
+
 a {
   color: #1A0DAB;
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
 }
+
 ul {
   padding: 0px;
   text-align: center;
 }
+
 li {
   display: inline-block;
 }
+
 li:after {
   content: " |";
 }
+
 li:last-child:after {
     content: "";
 }
+
 .play {
   text-align: right;
+}
+
+@media only screen and (max-width : 420px) {
+  .text {
+    max-width: 300px;
+    margin-left: -150px;
+    font-size: 90%;
+  }
+}
+
+@media only screen and (max-width : 320px) {
+  .text {
+    max-width: 250px;
+    margin-left: -125px;
+    font-size: 80%;
+  }
+}
+
+@media only screen and (max-width : 270px) {
+  .text {
+    max-width: 200px;
+    margin-left: -100px;
+    font-size: 70%;
+  }
 }
